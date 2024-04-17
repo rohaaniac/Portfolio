@@ -125,7 +125,8 @@
   box-sizing: border-box;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none;
+  color:rgba(127, 255, 229,0.7); }
 
 li { list-style: none; }
 
@@ -756,7 +757,23 @@ main {
 
 .clients-item img:hover { filter: grayscale(0); }
 
-
+.download-btn {
+  position: relative;
+  width: 100%;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  text-transform: capitalize;
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
 
 
 
@@ -962,7 +979,7 @@ main {
   margin-bottom: 15px;
 }
 
-.project-img::before {
+/* .project-img::before {
   content: "";
   position: absolute;
   top: 0;
@@ -974,7 +991,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); } */
 
 .project-item-icon-box {
   --scale: 0.8;
